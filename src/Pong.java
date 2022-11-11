@@ -22,7 +22,7 @@ public class Pong {
         if(b.getY() == 0 || b.getY() == height){
             b.bounce();
         }
-        b.bounce(p1);
-        b.bounce(p2);
+        b.bounce(p1.getX(), p1.getY(), p1.getWidth());
+        b.bounce(p2.getX(), p2.getY(), p2.getWidth());
     }
 }

@@ -22,8 +22,8 @@ public class Ball {
         return y;
     }
 
-    public void bounce(Paddle p){
-        if(x == p.getX() && y >= p.getY() && y <= p.getY()+p.getWidth()){
+    public void bounce(int a, int b, int c){
+        if(x == a && y >= b && y <= b+c){
             vx = vx * (-1);
         }
     }

@@ -6,9 +6,8 @@ public class Test {
         Ball b = new Ball(3,8 );
         for(int i = 0; i < 5; i++){
             b.move();
-            b.bounce(a);
-            System.out.println("x: " + b.getX());
-            System.out.println("y: " + b.getY());
+            b.bounce(a.getX(), a.getY(), a.getWidth());
+            System.out.println("x: " + b.getX() + "   y: " + b.getY());
         }
     }
 }
