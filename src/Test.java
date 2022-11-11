@@ -9,5 +9,11 @@ public class Test {
             b.bounce(a.getX(), a.getY(), a.getWidth());
             System.out.println("x: " + b.getX() + "   y: " + b.getY());
         }
+
+        Pong game = new Pong(20, 20);
+        System.out.println("new game");
+        for(int i = 0; i < 50; i++){
+            game.update();
+        }
     }
 }

@@ -16,6 +16,7 @@ public class Pong {
     public void update(){
         b.move();
         checkCollision();
+        System.out.println("x: " + b.getX() + "   y: " + b.getY());
     }
 
     public void checkCollision(){
