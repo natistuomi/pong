@@ -9,14 +9,13 @@ public class Pong {
         this.width = width;
         this.height = height;
         b = new Ball(width/2, height/2);
-        p1 = new Paddle(0, height/2);
-        p2 = new Paddle(width, height/2);
+        p1 = new Paddle(0, (height/2)-5);
+        p2 = new Paddle(width, (height/2)-5);
     }
 
     public void update(){
         b.move();
         checkCollision();
-        System.out.println("x: " + b.getX() + "   y: " + b.getY());
     }
 
     public void checkCollision(){
@@ -25,5 +24,9 @@ public class Pong {
         }
         b.bounce(p1.getX(), p1.getY(), p1.getWidth());
         b.bounce(p2.getX(), p2.getY(), p2.getWidth());
+    }
+
+    public Ball getB() {
+        return b;
     }
 }

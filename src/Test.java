@@ -10,10 +10,13 @@ public class Test {
             System.out.println("x: " + b.getX() + "   y: " + b.getY());
         }
 
-        Pong game = new Pong(20, 20);
+        Pong game = new Pong(20, 10);
+        Ball ball = game.getB();
         System.out.println("new game");
         for(int i = 0; i < 50; i++){
             game.update();
+            System.out.println("x: " + ball.getX() + "   y: " + ball.getY());
+            System.out.println("vx: " + ball.getVx() + "   vy: " + ball.getVy());
         }
     }
 }

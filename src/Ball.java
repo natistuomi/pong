@@ -31,4 +31,12 @@ public class Ball {
     public void bounce(){
         vy = vy * (-1);
     }
+
+    public int getVx() {
+        return vx;
+    }
+
+    public int getVy() {
+        return vy;
+    }
 }
